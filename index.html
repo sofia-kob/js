@@ -3,13 +3,13 @@
 <head>
 <script>
 /* 
-Задание для Софии
+Задание
 1. Добавить кнопку "Узнать имя", заменяющую текст "Тот чье имя нельзя называть" на тект "Волан-де-морт".
 2. Исправть функцию removeSlizer(), чтобы она скрывала текст "Факультет Слизерин"
 */
 
 function removeSlizer() {
-  document.getElementById("demo").innerHTML = "Paragraph changed.";
+  document.getElementById("demo").style.display='none';
 }
 </script>
 </head>
@@ -21,10 +21,9 @@ function removeSlizer() {
 
 <button type="button" onclick="removeSlizer()">Скрыть факультет</button>
 
-<p>Тот чье имя нельзя называть</p>
-<!-- Ниже добавить код кнопки "Узнать имя" -->
-
-
+<p id="demo2">Тот чье имя нельзя называть</p>
+  <!-- Ниже добавить код кнопки "Узнать имя" -->
+<button type="button" onclick='document.getElementById("demo2").innerHTML ="Волан-де-морт"'>Узнать имя</button>
 
 
 </body>
